@@ -1,6 +1,8 @@
-
+const webClient = require('./webClient');
+const datapipe = require('./datapipe');
 
 !function () {
-    console.log('Hello World!');
-
+    let client = new webClient("", 0);
+    let pipe = new datapipe();
+    client.dataPipe = pipe;
 }();
